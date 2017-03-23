@@ -2,13 +2,13 @@ package ohtu.verkkokauppa;
 
 public class Kauppa {
 
-    private Varasto varasto;
-    private Pankki pankki;
+    private VarastoInterface varasto;
+    private PankkiInterface pankki;
     private Ostoskori ostoskori;
-    private Viitegeneraattori viitegeneraattori;
+    private ViitegeneraattoriInterface viitegeneraattori;
     private String kaupanTili;
 
-    public Kauppa(Varasto haettuVarasto, Pankki haettuPankki, Viitegeneraattori haettuViitegeneraattori) {
+    public Kauppa(VarastoInterface haettuVarasto, PankkiInterface haettuPankki, ViitegeneraattoriInterface haettuViitegeneraattori) {
         varasto = haettuVarasto;
         pankki = haettuPankki;
         viitegeneraattori = haettuViitegeneraattori;
